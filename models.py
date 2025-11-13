@@ -19,11 +19,3 @@ class User(Base):
           return f"User(id={self.id}, name={self.name}, email={self.email})"   
 
 
-# Create Tables
-
-def create_tables():
-   Base.metadata.create_all(engine)
-   
-# Delete Tables
-def delete_tables():
-    Base.metadata.drop_all(engine)
